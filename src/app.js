@@ -9,6 +9,10 @@ app.get("/test", (req,res) => {
     res.send("test for test route")
 }); //request handler
 
+app.get("/user", (req,res) => {
+    res.send({ firstName: "Nidhi", lastName: "Dewangan"});
+});
+
 app.listen(3000, () => {
     console.log("Server is running on port 3000...")
 }); // server will listen to 3000 port number
